@@ -7,6 +7,6 @@ class Anagram
   end
 
   def match(tab)
-    tab.collect { |e| e if e.chars.sort == @word.chars.sort }
+    tab.select { |e| e if e.chars.sort == @word.chars.sort }
   end
 end
