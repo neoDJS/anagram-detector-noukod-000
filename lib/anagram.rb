@@ -7,5 +7,6 @@ class Anagram
   end
 
   def match(tab)
+    tab.map { |e| e.chars.sort == @word.chars.sort }
   end
 end
